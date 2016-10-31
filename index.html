@@ -8,7 +8,7 @@
 <body>
 	<!-- Логотип и прочее -->
 	<header class="main-header">
-		<div class="container-center">
+		<div class="container-center clearfix">
 			<a class="logo" href="/">ТЕХНОМАРТ</a>
 			<form action="/" method="get">
 				<input type="search" name="search" id="search" value="Поиск:">
@@ -19,7 +19,7 @@
 		</div>
 	</header>
 	<div class="container-content">
-		<div class="container-center">
+		<div class="container-center clearfix">
 				<!-- Контакты регистрация -->
 			<div class="information-container">
 				<div class="information-description">
@@ -34,7 +34,7 @@
 				</div>
 				<div class="information-authorization">
 					<a class="login" href="#">Войти</a>
-					<a href="#">Регистрация</a>
+					<a class="registration" href="#">Регистрация</a>
 				</div>
 				<!-- Меню навигации -->
 				<nav class="navigation">
@@ -61,6 +61,10 @@
 						<h3>Инструмент</h3>
 						<a href="#">На все случаи</a>
 					</div>
+					<div class="services-item tech">
+						<h3>Техника</h3>
+						<a href="#">Для стройки</a>
+					</div>
 					<div class="service-slider">
 						<div class="slide">
 							<h2>Перфораторы</h2>
@@ -85,10 +89,6 @@
 					</div>
 				</div>
 				<div class="service">
-					<div class="services-item tech">
-						<h3>Техника</h3>
-						<a href="#">Для стройки</a>
-					</div>
 					<div class="services-item dicount">
 						<h3>Скидка 50%</h3>
 						<a href="#">На 350 товаров</a>
@@ -213,7 +213,7 @@
 			<!-- О компании -->
 			<div class="company-block">
 				<div class="about-company">
-					<h2>Компания «Техномарт»</h2>
+					<h2 class="page-title">Компания «Техномарт»</h2>
 					<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
 					<p>Мы можем доставить ваш товар в самые отдаленные точки России!
 					Техномарт работает со многими транспортными компаниями: </p>
@@ -236,7 +236,7 @@
 				</div>
 				<!-- Всплывающее окно -->
 				<!-- Не умею привязывать форму к кнопке -->
-				<div class="popup">
+			<!-- 	<div class="popup">
 					<form action="/" method="post">
 						<a class="close" href="#">Закрыть</a>
 						<label for="login">Ваше имя:</label><br>
@@ -247,7 +247,7 @@
 						<textarea name="comment" id="comment" placeholder="В свободной форме" cols="20" rows="5"></textarea><br>
 						<input type="submit" value="Отправить" class="redbutton">
 					</form>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>

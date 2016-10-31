@@ -3,7 +3,15 @@ body {
 	font-family: "Cuprum", "Arial", sans-serif;
 	line-height: 24px;
 	color: #ffffff;
-	font-weight: normal; 
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 h1 {
@@ -11,11 +19,314 @@ h1 {
 	line-height: 30px;
 	color: #32425c;
 	font-weight: normal;
+	text-transform: uppercase
+	outline: 1px solid #2EC710;
 }
 
 h2 {
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
-	font-weight: normal; 
+	font-weight: normal;
+	text-transform: uppercase
+	outline: 1px solid #2EC710;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container-center {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+	outline: 1px solid #C43408;
+}
+
+.logo {
+	width: 220px;
+	float: left;
+	margin-right: 10px;
+	text-align: center;
+	outline: 1px solid #CF2EC9;
+}
+
+form {
+	display: inline-block;
+}
+
+.bookmarks,
+.cart {
+	display: inline-block;
+    text-align: center;
+    font-size: 17px;
+    line-height: 18px;
+    color: #fff;
+    background-color: #293449;
+}
+
+.order  {
+	display: inline-block;
+    text-align: center;
+    font-size: 17px;
+    line-height: 18px;
+    color: #fff;
+    background-color: #293449;
+}
+
+.information-description {
+	width: 200px;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 23px;
+	color: #ee3643;
+	outline: 1px solid #2EC710;
+}
+
+.information-address {
+	width: 300px;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 24px;
+	color: #32425c;
+	outline: 1px solid #2EC710;
+}
+
+.information-phone {
+	width: 300px;
+	display: inline-block;
+	font-size: 21px;
+	line-height: 18px;
+	color: #e9292a;
+	outline: 1px solid #2EC710;
+}
+
+.information-authorization {
+	width:300px;
+	display: inline-block;
+	outline: 1px solid #2EC710;
+}
+
+.navigation {
+	width:940px;
+	margin-top:46px;
+	margin-bottom: 115px;
+	outline: 1px solid #2EC710;
+}
+.navigation ul {
+	margin: 0;
+	padding: 0;
+}
+
+.navigation li {
+	display:inline-block;
+}
+
+.services {
+	width: 940px;
+	margin-bottom: 50px;
+}
+
+.services-item {
+	display:inline-block;
+	width:300px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	outline: 1px solid #2EC710;
+}
+
+.services-item.new {
+	background: #f6b22d;
+}
+
+.services-item.tools {
+	background: #4aafde;
+}
+
+.services-item.tech {
+	background: #cc79d1;
+}
+
+.services-item.dicount {
+	background: #85d179;
+}
+
+.services-item.delivery {
+	background: #f6b22d;
+}
+
+.service-slider {
+	float: left;
+	width: 621px;
+	outline: 1px solid #2EC710;
+}
+
+.popular-block {
+	width: 940px;
+	display:inline-block;
+	margin-bottom: 20px;
+	outline: 1px solid #2EC710;
+}
+
+.page-title {
+	font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    float: left;
+    text-transform: uppercase;
+}
+
+.main-btn {
+	float: right;
+    margin: 25px 0;
+    outline: 1px solid #2EC710;
+    background: #ee3643;
+}
+
+.popular-goods-item {
+	width: 220px;
+	display: inline-block;
+	vertical-align: top;
+	min-height: 250px;
+	text-align: center;
+	outline: 1px solid #2EC710;
+}
+
+.popular-goods-item p {
+	padding: 0 25px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    outline: 1px solid #2EC710;
+}
+
+.old-price {
+	font-size: 17px;
+    line-height: 18px;
+    text-decoration: line-through;
+    color: #999999;
+    outline: 1px solid #2EC710;
+}
+
+.current-price {
+	font-size: 17px;
+	line-height: 18px;
+	text-decoration: line-through;
+	color: #fff;
+	background: #ee3643;
+	outline: 1px solid #2EC710;
+}
+
+.popular-producers-block {
+	width: 940px;
+	display:inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	outline: 1px solid #2EC710;
+}
+
+.brands {
+	text-align: center;
+	width: 220px;
+	display: inline-block;
+    outline: 1px solid #2EC710;
+    margin-bottom: 20px;
+}
+
+.services-block p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #000;
+	outline: 1px solid #2EC710;
+}
+
+.about-company {
+	width: 400px;
+	display:inline-block;
+	float: left;
+	outline: 1px solid #2EC710;
+}
+
+.about-company p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #000;
+	outline: 1px solid #2EC710;
+}
+
+.about-company ul li {
+	font-size: 18px;
+	line-height: 20px;
+	color: #000;
+	outline: 1px solid #2EC710;
+}
+
+.about-company-contacts {
+	width: 310px;
+	display:inline-block;
+	float: right;
+	outline: 1px solid #2EC710;
+}
+
+.about-company-contacts p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #000;
+	outline: 1px solid #2EC710;
+}
+
+.map {
+	text-align: center;
+}
+
+.footer-top {
+	width: 940px;
+	background: #32425c;
+	outline: 1px solid #2EC710;
+}
+
+.footer-contacts {
+	width: 330px;
+	outline: 1px solid #2EC710;
+}
+
+.footer-navigation {
+	width: 550px;
+	outline: 1px solid #2EC710;
+}
+
+.footer-navigation li {
+	display: inline-block;
+}
+
+.footer-bottom {
+	width: 940px;
+	background: #293449;
+}
+
+.footer-rights {
+	width: 230px;
+	float: left;
+	color: #000;
+	outline: 1px solid #2EC710;
+}
+
+.footer-social {
+	width: 150px;
+	float: left;
+	outline: 1px solid #2EC710;
+}
+
+.footer-feedback {
+	width: 140px;
+	float: left;
+	color: #000;
+	outline: 1px solid #2EC710;
+}
+
+.footer-design {
+	width: 140px;
+	float: right;
+	color: #000;
+	outline: 1px solid #2EC710;
 }
