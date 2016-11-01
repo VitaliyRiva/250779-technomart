@@ -2,7 +2,7 @@ body {
 	font-size: 17px;
 	font-family: "Cuprum", "Arial", sans-serif;
 	line-height: 24px;
-	color: #ffffff;
+	color: #fff;
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
@@ -19,7 +19,7 @@ h1 {
 	line-height: 30px;
 	color: #32425c;
 	font-weight: normal;
-	text-transform: uppercase
+	text-transform: uppercase;
 	outline: 1px solid #2EC710;
 }
 
@@ -28,12 +28,18 @@ h2 {
 	line-height: 30px;
 	color: #32425c;
 	font-weight: normal;
-	text-transform: uppercase
+	text-transform: uppercase;
 	outline: 1px solid #2EC710;
 }
 
 a {
 	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+
+.main-header {
+    background: #293449;
 }
 
 .container-center {
@@ -44,74 +50,111 @@ a {
 }
 
 .logo {
-	width: 220px;
-	float: left;
-	margin-right: 10px;
-	text-align: center;
-	outline: 1px solid #CF2EC9;
+	display: inline-block;
+    width: 220px;
+    padding: 12px 0;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: top;
+    color: #fff;
+    background: #ee3643;
 }
 
 form {
 	display: inline-block;
+    width: 220px;
+    padding: 12px 0px;
+    vertical-align: top;
+    text-align: center;
+}
+
+input {
+	font-size: 17px;
+    line-height: 18px;
+    border: none;
+    color: #fff;
+    background: #293449;
 }
 
 .bookmarks,
 .cart {
-	display: inline-block;
+    display: inline-block;
+    padding: 12px 0;
+    width: 140px;
     text-align: center;
-    font-size: 17px;
-    line-height: 18px;
     color: #fff;
-    background-color: #293449;
 }
 
 .order  {
 	display: inline-block;
+    padding: 12px 0;
+    width: 150px;
+    float: right;
     text-align: center;
-    font-size: 17px;
-    line-height: 18px;
     color: #fff;
-    background-color: #293449;
+    background-color: #63a63e;
+}
+
+.information-container {
+    padding: 46px 0 60px;
+    background-color: #f1f5f7;
+    margin-bottom: 50px;
 }
 
 .information-description {
 	width: 200px;
-	display: inline-block;
-	font-size: 16px;
-	line-height: 23px;
-	color: #ee3643;
-	outline: 1px solid #2EC710;
+    display: inline-block;
+    padding: 0px 53px 0;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ee3643;
 }
 
 .information-address {
 	width: 300px;
-	display: inline-block;
-	font-size: 14px;
-	line-height: 24px;
-	color: #32425c;
-	outline: 1px solid #2EC710;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
 }
 
 .information-phone {
-	width: 300px;
-	display: inline-block;
-	font-size: 21px;
-	line-height: 18px;
-	color: #e9292a;
-	outline: 1px solid #2EC710;
+	padding: 11px 0;
+    font-size: 21px;
+    line-height: 18px;
+    border: 3px solid #fff;
+    color: #e9292a;
 }
 
 .information-authorization {
-	width:300px;
-	display: inline-block;
-	outline: 1px solid #2EC710;
+	width: 220px;
+	float: right;
+    display: inline-block;
+    padding: 11px 0;
+    vertical-align: top;
+    text-align: center;
+}
+
+.login,
+.registration {
+	background: #fff;
+    padding: 12px 20px;
+    margin-right: 10px;
+}
+
+.registration:last-child {
+	margin-right: 0px;
 }
 
 .navigation {
-	width:940px;
-	margin-top:46px;
-	margin-bottom: 115px;
-	outline: 1px solid #2EC710;
+    margin: 0;
+    padding: 0;
+    margin-top: 46px;
+    text-align: center;
+    background: #293449;
+    outline: 1px solid #2EC710;
 }
 .navigation ul {
 	margin: 0;
@@ -122,37 +165,85 @@ form {
 	display:inline-block;
 }
 
-.services {
-	width: 940px;
-	margin-bottom: 50px;
+.navigation li a {
+	display: inline-block;
+    vertical-align: top;
+    padding: 20px 30px 18px;
+    border-bottom: 5px solid #293449;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 17px;
+    color: #fff;
 }
 
 .services-item {
 	display:inline-block;
-	width:300px;
+	width:255px;
+	min-height: 125px;
 	margin-right: 10px;
 	margin-bottom: 10px;
+	padding: 0 24px;
 	outline: 1px solid #2EC710;
 }
 
+.services-item a {
+	font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgba(0,0,0,.1);
+    color: #fff;
+}
+
+.services-item:nth-child(3) {
+	margin-right: 0px;
+	float:right;
+}
+
+.services-item:nth-child(5) {
+	margin-right: 0px;
+	float: right;
+}
+.services-item:nth-child(6) {
+	margin-right: 0px;
+	float: right;
+}
+
 .services-item.new {
-	background: #f6b22d;
+	background-color: #f6b22d;
+    background-image: url(../img/materials-bucket.png);
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
 }
 
 .services-item.tools {
 	background: #4aafde;
+	background-image: url(../img/tools-drill.png);
+	background-repeat: no-repeat;
+    background-position: 80% 50%;
 }
 
 .services-item.tech {
 	background: #cc79d1;
+	background-image: url(../img/tech-tractor.png);
+	background-repeat: no-repeat;
+    background-position: 80% 50%;
 }
 
 .services-item.dicount {
 	background: #85d179;
+	background-image: url(../img/discount-cart.png);
+	background-repeat: no-repeat;
+    background-position: 80% 50%;
 }
 
 .services-item.delivery {
 	background: #f6b22d;
+	background-image: url(../img/delivery-car.png);
+	background-repeat: no-repeat;
+    background-position: 80% 50%;
 }
 
 .service-slider {
@@ -161,11 +252,33 @@ form {
 	outline: 1px solid #2EC710;
 }
 
+.slide p {
+	color: #000;
+}
+
+.main-btn {
+	display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 3px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #ee3643;
+    color: #fff;
+}
+
+.popular-block .main-btn {
+	float: right;
+    margin-top: 20px;
+}
+
 .popular-block {
 	width: 940px;
-	display:inline-block;
-	margin-bottom: 20px;
-	outline: 1px solid #2EC710;
+    display: inline-block;
+    margin-bottom: 20px;
+    outline: 1px solid #2EC710;
+    background: #f7f3ec;
 }
 
 .page-title {
@@ -176,20 +289,18 @@ form {
     text-transform: uppercase;
 }
 
-.main-btn {
-	float: right;
-    margin: 25px 0;
-    outline: 1px solid #2EC710;
-    background: #ee3643;
-}
-
 .popular-goods-item {
 	width: 220px;
+	min-height: 316px;
 	display: inline-block;
+	margin-right: 10px;
 	vertical-align: top;
-	min-height: 250px;
 	text-align: center;
-	outline: 1px solid #2EC710;
+	border: 1px solid #e5e5e5;
+}
+
+.popular-goods-item:last-child {
+	margin-right:0px;	
 }
 
 .popular-goods-item p {
@@ -197,7 +308,6 @@ form {
     font-size: 18px;
     line-height: 20px;
     color: #000000;
-    outline: 1px solid #2EC710;
 }
 
 .old-price {
@@ -205,7 +315,6 @@ form {
     line-height: 18px;
     text-decoration: line-through;
     color: #999999;
-    outline: 1px solid #2EC710;
 }
 
 .current-price {
@@ -214,7 +323,6 @@ form {
 	text-decoration: line-through;
 	color: #fff;
 	background: #ee3643;
-	outline: 1px solid #2EC710;
 }
 
 .popular-producers-block {
@@ -222,43 +330,64 @@ form {
 	display:inline-block;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	background: #f7f3ec;
 	outline: 1px solid #2EC710;
 }
 
-.brands {
-	text-align: center;
-	width: 220px;
+.popular-producers-block .main-btn {
+    float: right;
+    margin-top: 20px;
+}
+
+.brand {
 	display: inline-block;
-    outline: 1px solid #2EC710;
+}
+
+.brand img {
+	width: 218px;
+    height: 143px;
+    margin-right: 20px;
     margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+.brand:nth-child(2n) img{
+    margin-right: 0px;
+    background: #000;
+    border: 2px solid #000;
+}
+
+.services-block h2 {
+	float:none;
 }
 
 .services-block p {
 	font-size: 14px;
 	line-height: 24px;
 	color: #000;
-	outline: 1px solid #2EC710;
 }
 
 .about-company {
-	width: 400px;
+	width: 540px;
 	display:inline-block;
 	float: left;
 	outline: 1px solid #2EC710;
+}
+
+.about-company h2 {
+	float:none;
 }
 
 .about-company p {
 	font-size: 14px;
 	line-height: 24px;
 	color: #000;
-	outline: 1px solid #2EC710;
 }
 
 .about-company ul li {
 	font-size: 18px;
-	line-height: 20px;
+	line-height: 24px;
 	color: #000;
-	outline: 1px solid #2EC710;
 }
 
 .about-company-contacts {
@@ -272,21 +401,21 @@ form {
 	font-size: 14px;
 	line-height: 24px;
 	color: #000;
-	outline: 1px solid #2EC710;
 }
 
 .map {
 	text-align: center;
+	padding-bottom: 13px;
 }
 
 .footer-top {
-	width: 940px;
-	background: #32425c;
-	outline: 1px solid #2EC710;
+    background: #32425c;
+    margin-top: 85px;
 }
 
 .footer-contacts {
 	width: 330px;
+	margin-top: 30px;
 	outline: 1px solid #2EC710;
 }
 
@@ -295,38 +424,40 @@ form {
 	outline: 1px solid #2EC710;
 }
 
+.footer-navigation ul {
+	margin: 0;
+    padding: 0;
+}
+
 .footer-navigation li {
 	display: inline-block;
 }
 
-.footer-bottom {
-	width: 940px;
-	background: #293449;
-}
 
 .footer-rights {
 	width: 230px;
-	float: left;
 	color: #000;
 	outline: 1px solid #2EC710;
 }
 
 .footer-social {
 	width: 150px;
-	float: left;
+
 	outline: 1px solid #2EC710;
 }
 
 .footer-feedback {
 	width: 140px;
-	float: left;
 	color: #000;
 	outline: 1px solid #2EC710;
 }
 
 .footer-design {
 	width: 140px;
-	float: right;
 	color: #000;
 	outline: 1px solid #2EC710;
+}
+
+.footer-bottom {
+	background: #293449;
 }
