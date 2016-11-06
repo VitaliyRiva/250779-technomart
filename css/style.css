@@ -22,7 +22,7 @@ h1 {
 	text-transform: uppercase;
 	background: #f2f6f8;
 	outline: 1px solid #2EC710;
-	padding: 15px;
+	padding: 30px 30px;
 	margin: 0;
 }
 
@@ -34,7 +34,7 @@ h2 {
 	text-transform: uppercase;
 	outline: 1px solid #2EC710;
 	padding: 0;
-    margin: 0;
+	margin: 0;
 }
 
 a {
@@ -44,7 +44,7 @@ a {
 }
 
 .main-header {
-    background: #293449;
+	background: #293449;
 }
 
 .container-center {
@@ -55,34 +55,44 @@ a {
 }
 
 .logo {
-	display: inline-block;
-    width: 220px;
-    padding: 12px 0;
-    font-size: 24px;
-    line-height: 24px;
-    text-align: center;
-    vertical-align: top;
-    color: #fff;
-    background: #ee3643;
+	float: left;
+	width: 220px;
+	padding: 12px 0;
+	font-size: 24px;
+	line-height: 24px;
+	text-align: center;
+	vertical-align: top;
+	color: #fff;
+	background: #ee3643;
 }
 
+
+.main-header form {
+	float: left;
+	width: 270px;
+	padding: 12px 0;
+	color: #000;
+	text-align: center;
+}
+
+
 form {
-	display: inline-block;
-    width: 220px;
-    padding: 12px 0px;
-    vertical-align: top;
-    color:#000;
-    text-align: center;
+	float: left;
+	width: 220px;
+	padding: 0;
+	vertical-align: top;
+	color:#000;
+	text-align: center;
 }
 
 fieldset {
 	border: none;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #f7f3ec;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #f7f3ec;
 }
 
 fieldset:nth-last-child(2) {
@@ -101,10 +111,10 @@ legend {
 
 input {
 	font-size: 17px;
-    line-height: 18px;
-    border: none;
-    color: #fff;
-    background: #293449;
+	line-height: 18px;
+	border: none;
+	color: #fff;
+	background: #293449;
 }
 
 label {
@@ -113,11 +123,11 @@ label {
 
 .bookmarks,
 .cart {
-    display: inline-block;
-    padding: 12px 0;
-    width: 140px;
-    text-align: center;
-    color: #fff;
+	padding: 12px 0;
+	width: 150px;
+	text-align: center;
+	color: #fff;
+	float: left;
 }
 
 /*Карзина при добавлении*/
@@ -126,92 +136,100 @@ label {
 	background: #ee3643;
 }
 
-.order  {
-	display: inline-block;
-    padding: 12px 0;
-    width: 150px;
-    float: right;
-    text-align: center;
-    color: #fff;
-    background-color: #63a63e;
+.order {
+	padding: 12px 0;
+	width: 150px;
+	float: right;
+	text-align: center;
+	color: #fff;
+	background-color: #63a63e;
 }
 
 .information-container {
-    padding: 46px 0 60px;
-    background-color: #f1f5f7;
+	padding: 46px 0 60px;
+	background-color: #f1f5f7;
+}
+
+.information-content {
+	padding-bottom: 46px;
 }
 
 .information-description {
 	width: 200px;
-    display: inline-block;
-    padding: 0px 53px 0;
-    font-size: 16px;
-    line-height: 23px;
-    color: #ee3643;
+	float: left;
+	padding: 0px 53px 0;
+	font-size: 16px;
+	line-height: 23px;
+	color: #ee3643;
 }
 
 .information-address{
-	width: 300px;
-    display: inline-block;
-    text-align: center;
-    font-size: 14px;
-    line-height: 24px;
-    color: #32425c;
+	width: 270px;
+	float: left;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+	color: #32425c;
 }
 
 .information-phone {
 	padding: 11px 0;
-    font-size: 21px;
-    line-height: 18px;
-    border: 3px solid #fff;
-    color: #e9292a;
+	font-size: 21px;
+	line-height: 18px;
+	border: 3px solid #fff;
+	color: #e9292a;
 }
 
 .information-authorization,
 .information-authorized {
-	width: 220px;
 	float: right;
-    display: inline-block;
-    padding: 11px 0;
-    vertical-align: top;
-    text-align: center;
+	width: 280px;
+	vertical-align: top;
+	text-align: center;
+}
+
+.registration {
+	float: right;
+	width: 110px;
+}
+.login {
+	width: 80px;
+	float: left;
 }
 
 /*Когда залогинен*/
-
 .login,
 .registration,
 .logged {
+	padding: 12px 20px;
+	margin-right: 10px;
 	background: #fff;
-    padding: 12px 20px;
-    margin-right: 10px;
 }
 
 .registration:last-child {margin-right: 0px;}
-.logged {margin-right: 0px;}
+.logged {margin-right: 0px; width: 260px; float: right;}
 
 .my-orders, .personal-area {
 	display: inline-block;
-	padding-top: 11px;
 	padding-right: 10px;
 	text-decoration: underline;
-    text-align: center;
-    font-size: 14px;
-    line-height: 24px;
-    color: #32425c;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+	color: #32425c;
 }
 
 .navigation {
-    margin: 0;
-    padding: 0;
-    margin-top: 46px;
-    text-align: center;
-    background: #293449;
-    outline: 1px solid #2EC710;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: #32425c;
+	outline: 1px solid #2EC710;
 }
 .navigation ul {
 	margin: 0;
 	padding: 0;
+	border-bottom: 5px solid #293449;
 }
 
 .navigation li {
@@ -220,34 +238,37 @@ label {
 
 .navigation li a {
 	display: inline-block;
-    vertical-align: top;
-    padding: 20px 30px 18px;
-    border-bottom: 5px solid #293449;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-    line-height: 17px;
-    color: #fff;
+	vertical-align: top;
+	padding: 20px 30px 18px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 17px;
+	line-height: 17px;
+	color: #fff;
+}
+
+.services {
+	padding-bottom: 50px;
 }
 
 .services-item {
-	display:inline-block;
-	width:255px;
+	float: left;
+	width: 250px;
 	min-height: 125px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	padding: 0 24px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 0 25px;
 	outline: 1px solid #2EC710;
 }
 
 .services-item a {
 	font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    padding: 10px;
-    border-radius: 3px;
-    background-color: rgba(0,0,0,.1);
-    color: #fff;
+	line-height: 18px;
+	text-transform: uppercase;
+	padding: 10px;
+	border-radius: 3px;
+	background-color: rgba(0,0,0,.1);
+	color: #fff;
 }
 
 .services-item:nth-child(3) {
@@ -266,37 +287,37 @@ label {
 
 .services-item.new {
 	background-color: #f6b22d;
-    background-image: url(../img/materials-bucket.png);
-    background-repeat: no-repeat;
-    background-position: 80% 50%;
+	background-image: url(../img/materials-bucket.png);
+	background-repeat: no-repeat;
+	background-position: 80% 50%;
 }
 
 .services-item.tools {
 	background: #4aafde;
 	background-image: url(../img/tools-drill.png);
 	background-repeat: no-repeat;
-    background-position: 80% 50%;
+	background-position: 80% 50%;
 }
 
 .services-item.tech {
 	background: #cc79d1;
 	background-image: url(../img/tech-tractor.png);
 	background-repeat: no-repeat;
-    background-position: 80% 50%;
+	background-position: 80% 50%;
 }
 
 .services-item.dicount {
 	background: #85d179;
 	background-image: url(../img/discount-cart.png);
 	background-repeat: no-repeat;
-    background-position: 80% 50%;
+	background-position: 80% 50%;
 }
 
 .services-item.delivery {
 	background: #f6b22d;
 	background-image: url(../img/delivery-car.png);
 	background-repeat: no-repeat;
-    background-position: 80% 50%;
+	background-position: 80% 50%;
 }
 
 .service-slider {
@@ -310,15 +331,15 @@ label {
 }
 
 .main-btn {
+	padding: 7px 20px;
 	display: inline-block;
-    padding: 7px 20px;
-    font-size: 14px;
-    border-radius: 3px;
-    line-height: 18px;
-    text-align: center;
-    text-transform: uppercase;
-    background: #ee3643;
-    color: #fff;
+	font-size: 14px;
+	border-radius: 3px;
+	line-height: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	background: #ee3643;
+	color: #fff;
 }
 
 .popular-block .main-btn {
@@ -326,59 +347,69 @@ label {
 }
 
 .popular-block {
-	width: 940px;  
-    display: inline-block;
-    padding: 20px 0;
-    margin-bottom: 20px;
-    outline: 1px solid #2EC710;
-    background: #f7f3ec;
+	width: 940px;
+	display: inline-block;
+	padding: 20px 0;
+	margin-bottom: 20px;
+	outline: 1px solid #2EC710;
+	background: #f7f3ec;
 }
 
 .page-title {
 	font-size: 30px;
-    line-height: 30px;
-    color: #32425c;
-    float: left;
-    text-transform: uppercase;
+	line-height: 30px;
+	color: #32425c;
+	float: left;
+	text-transform: uppercase;
 }
 
 .popular-goods-item {
-	width: 220px;
+	width: 218px;
+	float: left;
 	min-height: 316px;
-	display: inline-block;
-	margin-right: 10px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 	vertical-align: top;
 	text-align: center;
 	border: 1px solid #e5e5e5;
 }
 
 .popular-goods-item:last-child {
-	margin-right:0px;	
+	margin-right:0px;
+}
+
+.popular-goods-image {
+	width: 100%;
+	height: 160px;
 }
 
 .popular-goods-item p {
-	padding: 0 25px;
-    font-size: 18px;
-    line-height: 20px;
-    color: #000000;
+	padding: 0 15px 15px;
+	margin: 0;
+	font-size: 18px;
+	line-height: 20px;
+	color: #000000;
 }
 
 .old-price {
-	font-size: 17px;
-    line-height: 18px;
-    text-decoration: line-through;
-    color: #999999;
+	padding-bottom: 10px;
+	line-height: 18px;
+	text-decoration: line-through;
+	color: #999999;
 }
 
 .current-price {
-	display: inline-block;
 	padding:7px 15px;
 	font-size: 17px;
 	line-height: 18px;
-	text-decoration: line-through;
 	color: #fff;
 	background: #ee3643;
 	border-radius: 3px;
+}
+
+p + .current-price {
+	margin-top: 24px;
+	display: inline-block;
 }
 
 .popular-producers-block {
@@ -392,53 +423,63 @@ label {
 }
 
 .popular-producers-block .main-btn {
-    float: right;
+	float: right;
+}
+
+.brands {
+	padding-bottom: 60px;
 }
 
 .brand {
-	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.brand:nth-last-child(4n+1) {
+	margin-right: 0;
 }
 
 .brand img {
 	width: 218px;
-    height: 143px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #e5e5e5;
+	height: 143px;
+	border: 1px solid #e5e5e5;
 }
 
-.brand:nth-child(2n) img{
-    margin-right: 0px;
-    background: #000;
-    border: 2px solid #000;
+/*.brand:nth-child(3n){
+	margin-right: 0px;
+	background: #000;
+	border: 2px solid #000;
+}*/
+
+.services-block {
+	background: #f2f6f8;
+	padding-top: 70px;
+}
+
+.page-text {
+	font-size: 14px;
+	line-height: 24px;
+	color: #000;
 }
 
 .services-block h2 {
 	float:none;
 }
 
-.services-block p {
-	font-size: 14px;
-	line-height: 24px;
-	color: #000;
+.company-block {
+	padding-top: 80px;
 }
 
 .about-company {
 	width: 540px;
-	padding-bottom: 80px;
-	display:inline-block;
 	float: left;
 	outline: 1px solid #2EC710;
 }
 
-.about-company h2 {
+.about-company h2,
+.about-company-contacts h2 {
 	float:none;
-}
-
-.about-company p {
-	font-size: 14px;
-	line-height: 24px;
-	color: #000;
 }
 
 .about-company ul li {
@@ -454,66 +495,152 @@ label {
 	outline: 1px solid #2EC710;
 }
 
-.about-company-contacts p {
-	font-size: 14px;
-	line-height: 24px;
-	color: #000;
+.map {
+	width: 100%;
+	height: 158px;
+	padding-bottom: 20px;
+	text-align: center;
 }
 
-.map {
+.about-company-contacts .main-btn {
+	padding: 7px 20px;
+	display: block;
+	font-size: 14px;
+	border-radius: 3px;
+	line-height: 18px;
+	text-transform: uppercase;
+	background: #ee3643;
+	color: #fff;
 	text-align: center;
-	padding-bottom: 13px;
 }
 
 .footer-top {
-    background: #32425c;
+	background: #32425c;
+	padding-bottom: 50px;
 }
 
 .footer-contacts {
 	width: 330px;
+	float: left;
 	margin-top: 30px;
+	font-size:18px;
+	line-height:  24px;
+	color: #fff;
 	outline: 1px solid #2EC710;
 }
 
 .footer-navigation {
 	width: 550px;
+	float: right;
 	outline: 1px solid #2EC710;
-}
-
-.footer-navigation ul {
-	margin: 0;
-    padding: 0;
+	margin-top: 35px;
 }
 
 .footer-navigation li {
 	display: inline-block;
+	padding-right: 50px;
 }
 
+.footer-nav-first, .footer-nav-second{
+	margin: 0;
+	padding: 0;
+}
+
+.footer-nav-first a {
+	font-size: 18px;
+	line-height: 24px;
+	color: #f1f5f7;
+}
+.footer-nav-second a {
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffd180;
+}
+
+.footer-nav-second li:first-child {padding-left: 20px; padding-top:20px;}
+
+.footer-nav-first li:last-child {padding-right:0;}
+.footer-nav-second li:last-child {padding-right:0;}
+
 .footer-rights {
-	width: 230px;
-	color: #000;
+	width: 350px;
+	margin-right: 40px;
+	float: left;
+	font-size: 16px;
+	line-height: 18px;
+	color: #fff;
 	outline: 1px solid #2EC710;
 }
 
 .footer-social {
 	width: 150px;
+	display: inline-block;
 	outline: 1px solid #2EC710;
+}
+
+.footer-social .btn-social {
+	display: inline-block;
+	vertical-align: top;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	color: transparent;
+	margin-right: 5px;
+	background-color: #212a3a;
+}
+
+.social-vk {
+	background-image: url("../img/vk.png");
+	background-repeat: no-repeat;
+	background-position: 50% center;
+}
+
+.social-fb {
+	background-image: url("../img/facebook.png");
+	background-repeat: no-repeat;
+	background-position: 50% center;
+}
+
+.social-in {
+	background-image: url("../img/instagram.png");
+	background-repeat: no-repeat;
+	background-position: 50% center;
 }
 
 .footer-feedback {
 	width: 140px;
-	color: #000;
+	float: right;
+	margin-right: 50px;
 	outline: 1px solid #2EC710;
+}
+
+.footer-feedback p, .footer-design p {
+	font-size: 16px;
+	line-height: 18px;
+	color: #fff;
+	padding:0;
+	margin:0;
+}
+
+.footer-feedback a, .footer-design a{
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffd180;
 }
 
 .footer-design {
 	width: 140px;
-	color: #000;
+	float: right;
 	outline: 1px solid #2EC710;
+}
+
+footer {
+	padding-top: 50px;
 }
 
 .footer-bottom {
 	background: #293449;
+	padding-bottom: 30px;
 }
 
 
@@ -547,6 +674,7 @@ label {
 .filter-title, .filter-container-right{
 	font-size: 13px;
 	line-height: 18px;
+	text-align: left;
 	text-transform: uppercase;
 	font-weight: bold;
 	padding: 12px;
@@ -558,6 +686,7 @@ label {
 .range-price {
 	font-size: 17px;
 	line-height: 30px;
+	text-align:  left;
 	text-transform: uppercase;
 	font-weight: bold;
 	padding-top: 20px;
@@ -565,45 +694,82 @@ label {
 	color: #000;
 }
 
+.filter-sorting {
+	margin: 0;
+	padding: 0;
+}
+
+.filter-sorting li {
+	display: inline-block;
+}
+
+.filter-sorting li:first-child {
+	width: 220px;
+	padding-right: 5px;
+}
+
+.filter-sorting,
+.active-list,
+.type,
+.functional,
+.arrow-up,
+.arrow-down {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.filter-sorting .active-list {
+	color: #ee3643;
+	margin-right: 25px;
+}
+
+.filter-sorting .type, .functional {
+	display: inline-block;
+	line-height: 18px;
+	color: #acaaa5;
+	text-decoration: none;
+	border-bottom: 1px dotted #ee3643;
+	margin: 0 40px;
+}
+
 .catalog {
 	width: 700px;
-	display: inline-block;
+	float: right;
 	padding: 20px 0;
 }
 
 .catalog-items {
 	padding-top: 22px;
-	display: inline-block;
 }
 
 .catalog-item {
-	width: 220px;
-	display: inline-block;
+	width: 218px;
+	float: left;
 	margin-right: 20px;
 	margin-bottom: 20px;
-    vertical-align: top;
-    text-align: center;
-    min-height: 317px;
+	vertical-align: top;
+	text-align: center;
+	min-height: 317px;
 	border: 1px solid #e5e5e5;
 }
 
-/*НЕпонятная штука.... */
-.catalog-item:nth-child(1n) {
+.catalog-item:nth-child(3n) {
 	margin-right: 0px;
 }
 
+.catalog-image {
+	width: 100%;
+	height: 160px;
+}
 
 .catalog-item p {
 	font-size: 18px;
 	line-height: 20px;
-	font-weight:  bold;
+	font-weight: bold;
 	text-align: center;
-	padding: 0 20px;
+	padding: 0 16px 20px;
+	margin: 0;
 	color: #000;
-}
-
-.sorting {
-	float:left;
 }
 
 .pagination {
@@ -628,10 +794,10 @@ label {
 
 .pagination-page .main-btn {
 	border: none;
-    background: #fff;
-    padding: 0;
-    margin: 0;
-    color: #000;
+	background: #fff;
+	padding: 0;
+	margin: 0;
+	color: #000;
 }
 
 .pagination-page li.active {
@@ -647,11 +813,5 @@ label {
 	padding-top: 60px;
 }
 
-.content-about-block p {
-	font-size: 14px;
-	line-height: 24px;
-	color: #000;
-	margin: 0;
-    padding-bottom: 40px;
-}
+
 
