@@ -44,6 +44,7 @@ a {
 }
 
 .main-header {
+	height: 49px;
 	background: #293449;
 }
 
@@ -63,7 +64,12 @@ a {
 	text-align: center;
 	vertical-align: top;
 	color: #fff;
+	border-bottom: 5px solid #b52933;
 	background: #ee3643;
+}
+
+.logo:hover {
+	background: #ca2c37;
 }
 
 
@@ -130,6 +136,9 @@ label {
 	float: left;
 }
 
+.bookmarks:active { background: #161d29;}
+.cart:active { background: #161d29;}
+
 /*Карзина при добавлении*/
 
 .cart.active {
@@ -144,6 +153,9 @@ label {
 	color: #fff;
 	background-color: #63a63e;
 }
+
+.order:hover {background: #5fbb2d; }
+.order:active {background: #518534;}
 
 .information-container {
 	padding: 46px 0 60px;
@@ -247,6 +259,9 @@ label {
 	color: #fff;
 }
 
+.navigation li a:hover {background: #293449;}
+.navigation li a:active {color: #93969c;}
+
 .services {
 	padding-bottom: 50px;
 }
@@ -270,6 +285,9 @@ label {
 	background-color: rgba(0,0,0,.1);
 	color: #fff;
 }
+
+.services-item a:hover {background-color: rgba(0,0,0,.2);}
+.services-item a:active {background-color: rgba(0,0,0,.3);}
 
 .services-item:nth-child(3) {
 	margin-right: 0px;
@@ -341,6 +359,9 @@ label {
 	background: #ee3643;
 	color: #fff;
 }
+
+.main-btn:hover {background: #ca2c37;}
+.main-btn:active {background: #ba2732;}
 
 .popular-block .main-btn {
 	float: right;
@@ -446,6 +467,8 @@ p + .current-price {
 	border: 1px solid #e5e5e5;
 }
 
+brand img:hover {box-shadow: 0 10px 20px rgba(0,0,0,0.2);}
+
 /*.brand:nth-child(3n){
 	margin-right: 0px;
 	background: #000;
@@ -503,15 +526,7 @@ p + .current-price {
 }
 
 .about-company-contacts .main-btn {
-	padding: 7px 20px;
 	display: block;
-	font-size: 14px;
-	border-radius: 3px;
-	line-height: 18px;
-	text-transform: uppercase;
-	background: #ee3643;
-	color: #fff;
-	text-align: center;
 }
 
 .footer-top {
@@ -536,6 +551,10 @@ p + .current-price {
 	margin-top: 35px;
 }
 
+.footer-navigation a:hover {text-decoration: underline;}
+.footer-navigation a:active {opacity:0.3;}
+
+
 .footer-navigation li {
 	display: inline-block;
 	padding-right: 50px;
@@ -558,7 +577,6 @@ p + .current-price {
 }
 
 .footer-nav-second li:first-child {padding-left: 20px; padding-top:20px;}
-
 .footer-nav-first li:last-child {padding-right:0;}
 .footer-nav-second li:last-child {padding-right:0;}
 
@@ -589,6 +607,9 @@ p + .current-price {
 	background-color: #212a3a;
 }
 
+.btn-social:hover {background-color: #ee3643;}
+.btn-social:active {background-color: #ee3643;}
+
 .social-vk {
 	background-image: url("../img/vk.png");
 	background-repeat: no-repeat;
@@ -614,6 +635,9 @@ p + .current-price {
 	outline: 1px solid #2EC710;
 }
 
+.footer-feedback a:hover {text-decoration: underline;}
+.footer-feedback a:active {color: #ee3643;}
+
 .footer-feedback p, .footer-design p {
 	font-size: 16px;
 	line-height: 18px;
@@ -633,6 +657,9 @@ p + .current-price {
 	float: right;
 	outline: 1px solid #2EC710;
 }
+
+.footer-design a:hover {text-decoration: underline;}
+.footer-design a:active {color: #ee3643;}
 
 footer {
 	padding-top: 50px;
