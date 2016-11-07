@@ -10,7 +10,7 @@
 	<header class="main-header">
 		<div class="container-center clearfix">
 			<a class="logo" href="/">ТЕХНОМАРТ</a>
-			<form action="/" method="get">
+			<form class="header-search" action="/" method="get">
 				<input type="search" name="search" id="search" value="Поиск:">
 			</form>
 			<a href="#" class="bookmarks">Закладки:<span>0</span></a>
@@ -61,40 +61,36 @@
 		</ul>
 		<h1>Перфораторы</h1>
 		<div class="result-block clearfix">
-			<div class="filter-container-left">
-				<div class="filters">
-					<form action="/" method="get">
-						<div class="filter-title">Фильтр:</div>
-						<div class="range-price">Цена:</div>
-						<fieldset>
-							<legend>Производители:</legend>
-							<input type="checkbox" name="bosch" id="bosch" checked>
-							<label for="bosch">Bosch</label>
-							<input type="checkbox" name="interscol" id="interscol">
-							<label for="interscol">Интерскол</label>
-							<input type="checkbox" name="makita" id="makita" checked>
-							<label for="makita">Makita</label>
-							<input type="checkbox" name="dewalt" id="dewalt">
-							<label for="dewalt">Dewalt</label>
-							<input type="checkbox" name="hitachi" id="hitachi">
-							<label for="hitachi">Hitachi</label>
-						</fieldset>
-						<fieldset>
-							<legend>Питание:</legend>
-							<input type="radio" name="battery" id="battery" checked>
-							<label for="battery">Аккомуляторные</label>
-							<input type="radio" name="network" id="network">
-							<label for="network">Сетевые</label>
-						</fieldset>
-						<input type="submit" value="Показать">
-					</form>
-				</div>
-			</div>
+			<form class="catalog-result" action="/" method="get">
+				<div class="filter-title">Фильтр:</div>
+				<div class="range-price">Цена:</div>
+				<fieldset>
+					<legend>Производители:</legend>
+					<input type="checkbox" name="bosch" id="bosch" checked>
+					<label for="bosch">Bosch</label>
+					<input type="checkbox" name="interscol" id="interscol">
+					<label for="interscol">Интерскол</label>
+					<input type="checkbox" name="makita" id="makita" checked>
+					<label for="makita">Makita</label>
+					<input type="checkbox" name="dewalt" id="dewalt">
+					<label for="dewalt">Dewalt</label>
+					<input type="checkbox" name="hitachi" id="hitachi">
+					<label for="hitachi">Hitachi</label>
+				</fieldset>
+				<fieldset>
+					<legend>Питание:</legend>
+					<input type="radio" name="battery" id="battery" checked>
+					<label for="battery">Аккомуляторные</label>
+					<input type="radio" name="network" id="network">
+					<label for="network">Сетевые</label>
+				</fieldset>
+				<input type="submit" value="Показать">
+			</form>
 				<!-- Фильт сортировки -->
 			<div class="catalog">
-				<div class="filter-container-right">
-					<ul class="filter-sorting">
-						<li>Сортировка:</li>
+				<div class="sort-panel">
+					Сортировка:
+					<ul class="sorting-list">
 						<li><a class="active-list" href="#">По цене</a></li>
 						<li><a class="type" href="#">По типу</a></li>
 						<li><a class="functional" href="#">По функционалу</a></li>
@@ -244,11 +240,9 @@
 		<!-- О перфораторе -->
 	<div class="content-about">
 		<div class="container-center">
-			<div class="content-about-block">
-				<h2>Пара слов о перфораторах</h2>
-				<p class="page-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-				Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-			</div>
+			<h2>Пара слов о перфораторах</h2>
+			<p class="page-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+			Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 		</div>
 	</div>
 	<!-- Футер верхняя часть -->
