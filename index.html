@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,7 +12,7 @@
 		<div class="container-center clearfix">
 			<a class="logo" href="/">ТЕХНОМАРТ</a>
 			<form class="header-search" action="/" method="get">
-				<input type="search" name="search" id="search" value="Поиск:">
+				<input type="search" name="search" id="search" placeholder="Поиск:">
 			</form>
 			<a href="#" class="bookmarks">Закладки:<span>0</span></a>
 			<a href="#" class="cart">Корзина:<span>0</span></a>
@@ -38,9 +39,9 @@
 			<!-- Меню навигации -->
 			<nav class="navigation">
 				<ul class="menu">
-					<li><a href="#">Главная</a></li>
+					<li><a href="index.html">Главная</a></li>
 					<li><a href="#">Компания</a></li>
-					<li><a href="#">Каталог</a></li>
+					<li><a href="catalog.html">Каталог</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="#">Спецпредложения</a></li>
 					<li><a href="#">Доставка</a></li>
@@ -66,25 +67,28 @@
 					<a href="#">Для стройки</a>
 				</div>
 				<div class="service-slider">
-					<div class="slide">
-						<h2>Перфораторы</h2>
-						<p>Настоящие мужские игрушки</p>
-						<!-- Здесь была картинка, которую я убрал -->
-						<a class="prevbutton" href="#">"<"</a>
-						<a class="nextbutton" href="#">">"</a>
-						<a class="main-btn" href="#">Открыть каталог</a>
-						<ul>
-							<li><a class="control-points"></a></li>
-							<li><a class="control-points"></a></li>
-						</ul>
+					<input type="radio" id="btn-1" name="toggle" checked>
+					<input type="radio" id="btn-2" name="toggle">
+					<div class="slider-controls">
+						<label for="btn-1"></label>
+						<label for="btn-2"></label>
 					</div>
-					<!-- <div class="slide">
-						<p class="title">Перфораторы</p>
-						<p>Настоящие мужские игрушки</p>
-						<a class="prevbutton" href="#">Назад</a>
-						<a class="nextbutton" href="#">Вперед</a>
-						<a class="main-btn" href="#">Открыть каталог</a>
-					</div> -->
+					<div class="slides">
+						<div class="slide">
+							<div class="slide-text">
+								<h2 class="slide-title">Перфораторы</h2>
+								<p class="text-slider">Настоящие мужские игрушки</p>
+								<a class="main-btn" href="catalog.html">Открыть каталог</a>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide-text">
+								<h2 class="slide-title">Дрели</h2>
+								<p class="text-slider">Соседям на радость!</p>
+								<a class="main-btn" href="#">Открыть каталог</a>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="services-item services-item-dicount">
 					<h3>Скидка 50%</h3>
@@ -103,43 +107,59 @@
 			<!-- Популярные Товары -->
 			<div class="popular-goods-block clearfix">
 				<div class="popular-goods-item">
+					<div class="action">
+						<a href="#" class="buy">Купить</a>
+						<a href="#" class="bookmark">В закладки</a>
+					</div>
 					<div class="popular-goods-image">
-						<img src="img/bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="180" height="160">
+						<img src="img/bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="168">
 					</div>
 					<p>Перфоратор BOSCH BFG 9000</p>
 					<div class="old-price">
 						32 500Р.
 					</div>
-					<a class="current-price" href="#">25 500Р.</a>
+					<div class="current-price" href="#">25 500Р.</div>
 				</div>
 				<div class="popular-goods-item">
+					<div class="action">
+						<a href="#" class="buy">Купить</a>
+						<a href="#" class="bookmark">В закладки</a>
+					</div>
 					<div class="popular-goods-image">
-						<img src="img/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="180" height="160">
+						<img src="img/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="168">
 					</div>
 					<p>Перфоратор BOSCH BFG 3000</p>
 					<div class="old-price">
 						22 500Р.
 					</div>
-					<a class="current-price" href="#">15 500Р.</a>
+					<div class="current-price" href="#">15 500Р.</div>
 				</div>
 				<div class="popular-goods-item">
+					<div class="action">
+						<a href="#" class="buy">Купить</a>
+						<a href="#" class="bookmark">В закладки</a>
+					</div>
 					<div class="popular-goods-image">
-						<img src="img/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="180" height="160">
+						<img src="img/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="168">
 					</div>
 					<p>Перфоратор BOSCH BFG 6000</p>
 					<div class="old-price">
 						30 500Р.
 					</div>
-					<a class="current-price" href="#">25 500Р.</a>
+					<div class="current-price" href="#">25 500Р.</div>
 				</div>
 				<div class="popular-goods-item new">
+					<div class="action">
+						<a href="#" class="buy">Купить</a>
+						<a href="#" class="bookmark">В закладки</a>
+					</div>
 					<div class="popular-goods-image">
-						<img src="img/bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="180" height="160">
+						<img src="img/bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="168">
 					</div>
 						<p>Перфоратор BOSCH BFG 2000</p>
 				<!-- <div class="old-price">
 					</div> -->
-					<a class="current-price" href="#">12 500Р.</a>
+					<div class="current-price" href="#">12 500Р.</div>
 				</div>
 			</div>
 			<!-- Заголовок производителей -->
@@ -181,32 +201,37 @@
 				<h2 class="page-title">Сервисы</h2>
 				<p class="page-text">Хороший интернет-магазин отличается от плохого не только ценами! <br>
 				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-			<!--<div class="tabs">
-					<ul class="tab-menu">
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Гарантия</a></li>
-						<li><a href="#">Кредит</a></li>
-					</ul>
-					<div class="delivery">
-						<h2 class="blue">Доставка</h2>
-						<p>Мы с удовольствием доставим ваш товар прямо
-						к вашему подъезду совершенно бесплатно!
-						Ведь мы неплохо заработаем,
-						поднимая его на ваш на этаж!</p>
+				<div class="service-tabs">
+					<input type="radio" id="button-1" name="toggle">
+					<input type="radio" id="button-2" name="toggle">
+					<input type="radio" id="button-3" name="toggle">
+					<div class="tabs-controls">
+						<label for="button-1">Доставка</label>
+						<label for="button-2">Гарантия</label>
+						<label for="button-3">Кредит</label>
 					</div>
-					<div class="guarantee">
-						<h2 class="blue">Гарантия</h2>
-						<p>Если купленный у нас товар поломается или заискрит,
-						а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-						Дом уж восстановите как-нибудь сами.</p>
+					<div class="tabs">
+						<div class="tab-text">
+							<h2 class="blue">Доставка</h2>
+							<p class="page-text">Мы с удовольствием доставим ваш товар прямо
+							к вашему подъезду совершенно бесплатно!
+							Ведь мы неплохо заработаем,
+							поднимая его на ваш на этаж!</p>
+						</div>
+						<div class="tab-text">
+							<h2 class="blue">Гарантия</h2>
+							<p class="page-text">Если купленный у нас товар поломается или заискрит,
+							а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+							Дом уж восстановите как-нибудь сами.</p>
+						</div>
+						<div class="tab-text">
+							<h2 class="blue">Кредит</h2>
+							<p class="page-text">Залезть в долговую яму стало проще!
+							Кредитные консультанты придут вам на помощь.</p>
+							<a class="main-btn" href="#">Отправить заявку</a>
+						</div>
 					</div>
-					<div class="credit">
-						<h2 class="blue">Кредит</h2>
-						<p>Залезть в долговую яму стало проще!
-						Кредитные консультанты придут вам на помощь.</p>
-						<a class="main-btn" href="#">Отправить заявку</a>
-					</div>
-				</div> -->
+				</div>
 			</div>
 		</div>
 		<!-- О компании -->
@@ -227,7 +252,7 @@
 				<!-- Карта -->
 				<div class="about-company-contacts">
 					<h2 class="page-title">Контакты</h2>
-					<p class="page-text">Вы можете забрать товар сами,
+					<p class="page-text">Вы можете забрать товар сами, <br>
 					заехав в наш офис:</p>
 					<div class="map">
 						<img src="img/map-small.jpg" alt="Карта" width="300" height="158">
