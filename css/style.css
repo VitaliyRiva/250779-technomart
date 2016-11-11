@@ -1230,7 +1230,6 @@ p + .current-price {
 	text-transform: uppercase;
 	padding-top: 12px;
 	padding-bottom: 12px;
-	padding-right: 0px;
 	padding-left: 18px;
 	border-radius: 3px;
 	background: #f7f3ec;
@@ -1441,6 +1440,10 @@ fieldset label:last-child {
 	vertical-align: middle;
 }
 
+.sorting-list li:last-child {
+	margin-right:20px;
+}
+
 .active-list,
 .type,
 .functional {
@@ -1457,7 +1460,7 @@ fieldset label:last-child {
 
 .type,
 .functional {
-	margin: 0 40px;
+	margin: 0px 42px;
 	line-height: 18px;
 	text-decoration: none;
 	border-bottom: 1px dotted #ee3643;
@@ -1465,7 +1468,7 @@ fieldset label:last-child {
 }
 
 .functional {
-	margin-right: 60px;
+	margin-right: 38px;
 }
 
 .active-list:hover,.type:hover,.functional:hover  {
