@@ -90,7 +90,6 @@ input{
 	position: relative;
 }
 
-
 .header-search input {
 	padding-left: 47px;
 	font-size: 17px;
@@ -108,7 +107,6 @@ input{
 .header-search input:hover {background: #212a3a;}
 .header-search input:focus{background: #fff; color: #262626;}
 
-
 .header-search:hover::before {opacity:1;}
 .header-search:active::before {opacity:0.5;}
 .header-search::before {
@@ -123,7 +121,6 @@ input{
 	opacity: 0.5;
 	z-index: 1;
 }
-
 
 .input-search {
 	position: relative;
@@ -184,8 +181,6 @@ input[type="search"] + label.input-search:focus::before {
 	background-image: url("../img/sprites.png");
 	opacity: 1;
 }*/
-
-
 
 fieldset {
 	border: none;
@@ -281,10 +276,6 @@ label {
 .cart:active { background: #161d29; opacity: 0.5;}
 
 /*Карзина при добавлении*/
-
-.cart.active {
-	background: #ee3643;
-}
 
 .order {
 	padding: 12px 0;
@@ -598,7 +589,6 @@ label {
 	background-position: 83% 54%;
 }
 
-
 /*...Слайдер...*/
 
 .service-slider {
@@ -804,7 +794,6 @@ label {
 .popular-goods-item:hover .action{display:block;}
 .catalog-item .action {display:none;}
 .catalog-item:hover .action{display:block; background: white;}
-
 
 .buy {
 	position: relative;
