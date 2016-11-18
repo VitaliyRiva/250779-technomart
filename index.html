@@ -11,13 +11,13 @@
 	<!-- Логотип и прочее -->
 	<header class="main-header">
 		<div class="container-center clearfix">
-			<a class="logo" href="/">ТЕХНОМАРТ</a>
+			<a href="index.html" class="logo">ТЕХНОМАРТ</a>
 			<form class="header-search" action="/" method="get">
 				<input type="search" name="search" id="search" placeholder="Поиск:">
 				<label class="input-search" for="search"></label>
 			</form>
-			<a href="#" class="bookmarks">Закладки:<span>0</span></a>
-			<a href="#" class="cart">Корзина:<span>0</span></a>
+			<a href="#" class="bookmarks active">Закладки:<span>0</span></a>
+			<a href="#" class="cart active">Корзина:<span>0</span></a>
 			<a href="#" class="order">Оформить заказ</a>
 		</div>
 	</header>
@@ -42,7 +42,7 @@
 			</div>
 			<!-- Меню навигации -->
 			<nav class="navigation">
-				<ul class="menu">
+				<ul>
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="#">Компания</a></li>
 					<li><a href="catalog.html">Каталог</a></li>
@@ -89,7 +89,7 @@
 							<div class="slide-text">
 								<h2 class="slide-title">Дрели</h2>
 								<p class="text-slider">Соседям на радость!</p>
-								<a class="main-btn" href="#">Открыть каталог</a>
+								<a class="main-btn" href="catalog.html">Открыть каталог</a>
 							</div>
 						</div>
 					</div>
@@ -120,9 +120,9 @@
 					</div>
 					<p>Перфоратор BOSCH BFG 9000</p>
 					<div class="old-price">
-						32 500Р.
+						32500 Р.
 					</div>
-					<div class="current-price" href="#">25 500Р.</div>
+					<div class="current-price" href="#">25500 Р.</div>
 				</div>
 				<div class="popular-goods-item">
 					<div class="action">
@@ -134,9 +134,9 @@
 					</div>
 					<p>Перфоратор BOSCH BFG 3000</p>
 					<div class="old-price">
-						22 500Р.
+						22500 Р.
 					</div>
-					<div class="current-price" href="#">15 500Р.</div>
+					<div class="current-price" href="#">15500 Р.</div>
 				</div>
 				<div class="popular-goods-item">
 					<div class="action">
@@ -148,9 +148,9 @@
 					</div>
 					<p>Перфоратор BOSCH BFG 6000</p>
 					<div class="old-price">
-						30 500Р.
+						30500 Р.
 					</div>
-					<div class="current-price" href="#">25 500Р.</div>
+					<div class="current-price" href="#">25500 Р.</div>
 				</div>
 				<div class="popular-goods-item new">
 					<div class="action">
@@ -163,7 +163,7 @@
 						<p>Перфоратор BOSCH BFG 2000</p>
 				<!-- <div class="old-price">
 					</div> -->
-					<div class="current-price" href="#">12 500Р.</div>
+					<div class="current-price" href="#">12500 Р.</div>
 				</div>
 			</div>
 			<!-- Заголовок производителей -->
@@ -205,35 +205,33 @@
 				<h2 class="page-title">Сервисы</h2>
 				<p class="page-text">Хороший интернет-магазин отличается от плохого не только ценами! <br>
 				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-				<div class="service-tabs">
-					<input type="radio" id="button-1" name="toggle">
-					<input type="radio" id="button-2" name="toggle">
-					<input type="radio" id="button-3" name="toggle">
-					<div class="tabs-controls">
+				<div class="services-tabs clearfix">
+					<input type="radio" id="button-1" name="services-toggle" checked>
+					<input type="radio" id="button-2" name="services-toggle">
+					<input type="radio" id="button-3" name="services-toggle">
+					<div class="services-toggles">
 						<label for="button-1">Доставка</label>
 						<label for="button-2">Гарантия</label>
 						<label for="button-3">Кредит</label>
 					</div>
-					<div class="tabs">
-						<div class="delivery">
-							<h2 class="blue">Доставка</h2>
-							<p class="page-text">Мы с удовольствием доставим ваш товар прямо
-							к вашему подъезду совершенно бесплатно!
-							Ведь мы неплохо заработаем,
-							поднимая его на ваш на этаж!</p>
-						</div>
-						<div class="guarantee">
-							<h2 class="blue">Гарантия</h2>
-							<p class="page-text">Если купленный у нас товар поломается или заискрит,
-							а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-							Дом уж восстановите как-нибудь сами.</p>
-						</div>
-						<div class="credit">
-							<h2 class="blue">Кредит</h2>
-							<p class="page-text">Залезть в долговую яму стало проще!
-							Кредитные консультанты придут вам на помощь.</p>
-							<a class="main-btn" href="#">Отправить заявку</a>
-						</div>
+					<div class="services-slide delivery">
+						<h2 class="tab-title">Доставка</h2>
+						<p class="page-text">Мы с удовольствием доставим ваш товар прямо
+						к вашему подъезду совершенно бесплатно! <br>
+						Ведь мы неплохо заработаем, <br>
+						поднимая его на ваш на этаж!</p>
+					</div>
+					<div class="services-slide guarantee">
+						<h2 class="tab-title">Гарантия</h2>
+						<p class="page-text">Если купленный у нас товар поломается или заискрит,
+						а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+						Дом уж восстановите как-нибудь сами.</p>
+					</div>
+					<div class="services-slide credit">
+						<h2 class="tab-title">Кредит</h2>
+						<p class="page-text">Залезть в долговую яму стало проще!
+						Кредитные консультанты придут вам на помощь.</p>
+						<a class="main-btn" href="#">Отправить заявку</a>
 					</div>
 				</div>
 			</div>
@@ -244,7 +242,7 @@
 				<div class="about-company">
 					<h2 class="page-title">Компания «Техномарт»</h2>
 					<p class="page-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
-					<p class="page-text">Мы можем доставить ваш товар в самые отдаленные точки России!
+					<p class="page-text">Мы можем доставить ваш товар в самые отдаленные точки России <br>
 					Техномарт работает со многими транспортными компаниями: </p>
 					<ul>
 						<li>Деловые линии</li>
@@ -259,24 +257,12 @@
 					<p class="page-text">Вы можете забрать товар сами, <br>
 					заехав в наш офис:</p>
 					<div class="map">
-						<img src="img/map-small.jpg" alt="Карта" width="300" height="158">
+						<a href="#" class="map">
+							<img src="img/map-small.jpg" alt="Карта" width="300" height="158">
+						</a>
 					</div>
-					<a class="main-btn" href="#open-popup">Заблудились? Напишите нам</a>
+					<a class="main-btn write-us" href="#">Заблудились? Напишите нам</a>
 				</div>
-				<!-- Всплывающее окно -->
-				<!-- Не умею привязывать форму к кнопке -->
-				<!--<div class="popup">
-					<form action="/" method="post">
-						<a class="close" href="#">Закрыть</a>
-						<label for="login">Ваше имя:</label><br>
-						<input type="text" name="login" id="login" placeholder="Представьтесь, пожалуйста"><br>
-						<label for="e-mail">Ваш e-mail:</label><br>
-						<input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа"><br>
-						<label for="comment">Текст письма:</label><br>
-						<textarea name="comment" id="comment" placeholder="В свободной форме" cols="20" rows="5"></textarea><br>
-						<input type="submit" value="Отправить" class="redbutton">
-					</form>
-				</div> -->
 			</div>
 		</div>
 	</div>
@@ -284,12 +270,12 @@
 	<footer>
 		<div class="footer-top">
 			<div class="container-center clearfix">
-				<a class="logo" href="/">ТЕХНОМАРТ</a>
+				<a class="logo" href="index.html">ТЕХНОМАРТ</a>
 				<div class="footer-navigation">
 					<ul class="footer-nav-first">
 						<li><a href="#">Компания</a></li>
 						<li><a href="#">Новости</a></li>
-						<li><a href="#">Каталог</a></li>
+						<li><a href="catalog.html">Каталог</a></li>
 						<li><a href="#">Доставка</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
@@ -328,5 +314,191 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Модальное окно логина -->
+	<div class="modal-content-login">
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<form action="/" class="login-enter" method="post">
+			<input type="text" class="login-field" name="login" placeholder="Логин">
+			<input type="password" class="password-field" name="password" placeholder="Пароль">
+			<input type="checkbox" id="remember" name="remember" checked>
+			<label for="remember">Запомнить меня</label>
+			<div class="button-send-login">
+				<input type="submit" value="Войти" class="main-btn">
+				<input type="submit" value="Забыл пароль" class="main-btn">
+			</div>
+		</form>
+	</div>
+		<!-- Конец -->
+
+		<!-- Модальное окно Корзины -->
+	<div class="modal-content-cart">
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<span>Товар добавлен в корзину</span>
+		<div class="button-send-cart">
+			<a href="#" class="main-btn">Оформить заказ</a>
+			<a href="#" class="main-btn">Продолжить покупки</a>
+		</div>
+	</div>
+		<!-- Конец -->
+
+		<!-- Модальное окно формы обратной связи -->
+	<div class="modal-content-feedback">
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<form class="feedback-form" action="/" method="post">
+			<div class="user-info-block clearfix">
+				<div class="user-name-block">
+					<label for="user-name">Ваше имя:</label>
+					<input type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста">
+				</div>
+				<div class="user-email-block">
+					<label for="user-email">Ваш e-mail:</label>
+					<input type="text" name="user-email" id="user-email" placeholder="Для отправки ответа">
+				</div>
+				<div class="user-text-block">
+					<label for="user-text">Текст письма:</label>
+					<textarea cols="50" rows="50"  name="user-text" id="user-text" placeholder="В свободной форме"></textarea>
+				</div>
+			</div>
+			<div class="button-send-block">
+				<input class="main-btn" type="submit" name="send-button" id="send-button" value="Отправить">
+			</div>
+		</form>
+	</div>
+	<!-- Конец -->
+
+	<!-- Карта -->
+	<div class="modal-content-map">
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<img src="img/map-large.jpg" alt="Местоположения">
+	</div>
+	<!-- Конец -->
+ <script>
+      var link = document.querySelector(".login");
+      var popup = document.querySelector(".modal-content-login");
+      var close = popup.querySelector(".modal-content-close");
+
+      var form = popup.querySelector("form");
+      var login = popup.querySelector("[name=login]");
+      var password = popup.querySelector("[name=password]");
+
+      var storage = localStorage.getItem("login");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+
+        if (storage) {
+          login.value = storage;
+          password.focus();
+        } else {
+          login.focus();
+        }
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
+      });
+
+      form.addEventListener("submit", function(event) {
+        if (!login.value || !password.value) {
+          event.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
+        } else {
+          localStorage.setItem("login", login.value);
+        }
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+            popup.classList.remove("modal-error");
+          }
+        }
+      });
+</script>
+
+<script>
+      var catalogbuy = document.querySelector(".buy");
+      var catalogbuypopup = document.querySelector(".modal-content-cart");
+      var catalogbuyclose = catalogbuypopup.querySelector(".modal-content-close");
+
+      catalogbuy .addEventListener("click", function(event) {
+      	event.preventDefault();
+		catalogbuypopup.classList.add("modal-content-show");
+      });
+
+      catalogbuyclose.addEventListener("click", function(event) {
+        event.preventDefault();
+        catalogbuypopup.classList.remove("modal-content-show");
+      });
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (catalogbuypopup.classList.contains("modal-content-show")) {
+            catalogbuypopup.classList.remove("modal-content-show");
+          }
+        }
+      });
+      for (var i=0; i < catalogbuy.length;i++){
+		catalogbuy[i].addEventListener("click", function(event) {
+		event.preventDefault();
+		catalogbuypopup.classList.add("modal-content-show");
+		});
+	}
+</script>
+
+<script>
+      var feedbackform = document.querySelector(".write-us");
+      var feedbackformpopup = document.querySelector(".modal-content-feedback");
+      var feedbackformclose = feedbackformpopup.querySelector(".modal-content-close");
+
+      feedbackform.addEventListener("click", function(event) {
+      	event.preventDefault();
+		feedbackformpopup.classList.add("modal-content-show");
+      });
+
+      feedbackformclose.addEventListener("click", function(event) {
+        event.preventDefault();
+        feedbackformpopup.classList.remove("modal-content-show");
+      });
+        window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (feedbackformpopup.classList.contains("modal-content-show")) {
+            feedbackformpopup.classList.remove("modal-content-show");
+          }
+        }
+      });
+</script>
+
+<script>
+      var mapOpen = document.querySelector(".map");
+
+      var mapPopup = document.querySelector(".modal-content-map");
+      var mapClose = mapPopup.querySelector(".modal-content-close");
+
+      mapOpen.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.add("modal-content-show");
+      });
+
+      mapClose.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.remove("modal-content-show");
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (mapPopup.classList.contains("modal-content-show")) {
+            mapPopup.classList.remove("modal-content-show");
+          }
+        }
+      });
+    </script>
+	<script src="js/jquery-3.1.1.min.js"></script>
 </body>
 </html>
