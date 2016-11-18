@@ -83,6 +83,7 @@ li {list-style: none;}
 .logo:hover {background: #ca2c37;}
 
 /*Поиск*/
+
 .header-search {
 	float: left;
 	width: 270px;
@@ -135,6 +136,8 @@ li {list-style: none;}
 	z-index: 2;
 }
 
+/*Конец*/
+
 .bookmarks {
 	padding: 12px 0;
 	min-width: 140px;
@@ -160,11 +163,14 @@ li {list-style: none;}
 	position: relative;
 	padding-left: 16px;
 }
+/*Когда в корзине есть что-то*/
 
 /*.cart.active,
 .bookmarks.active {
 	background: #ee3643;
 }*/
+
+/*Конец*/
 
 .cart span,
 .bookmarks span {
@@ -530,7 +536,7 @@ li {list-style: none;}
 	background-position: 86% 54%;
 }
 
-/*...Слайдер...*/
+/*Слайдер*/
 
 .service-slider {
 	float: left;
@@ -656,6 +662,8 @@ li {list-style: none;}
 	display: block;
 }
 
+/*Конец*/
+
 .main-btn {
 	padding: 11px 20px;
 	display: inline-block;
@@ -675,6 +683,7 @@ li {list-style: none;}
 .popular-block .main-btn {
 	float: right;
 	margin-right: 24px;
+	margin-top: 2px;
 	width: 213px;
 }
 
@@ -929,8 +938,7 @@ p + .current-price {
 	padding-bottom: 12px;
 }
 
-/*....Табы....*/
-
+/*Табы*/
 
 .services-tabs{
 	width: 960px;
@@ -977,7 +985,6 @@ p + .current-price {
 	color: #fff;
 	background: #32425c;
 }
-
 
 .services-toggles label:first-child {
 	border-top:none;
@@ -1047,8 +1054,7 @@ p + .current-price {
 	margin-bottom: 24px;
 }
 
-
-/*....Конец....*/
+/*Конец*/
 
 .company-block {
 	padding-top: 60px;
@@ -1360,8 +1366,6 @@ p + .current-price {
 	background-position: -10px -818px;
 }
 
-/*Стили для каталога*/
-
 .catalog-result {
 	float: left;
 	width: 220px;
@@ -1472,7 +1476,7 @@ p + .current-price {
 	background: #f7f3ec;
 }
 
-/*....Фильтр....*/
+/*Фильтр*/
 
 .catalog-result input[type="checkbox"],
 .catalog-result input[type="radio"] {
@@ -1600,7 +1604,7 @@ fieldset label:last-child {
 	padding-bottom: 0;
 }
 
-/*....Конец фильтра....*/
+/*Конец */
 
 .sorting-list {
 	margin: 0;
@@ -1813,7 +1817,6 @@ fieldset label:last-child {
 	margin:0;
 }
 
-
 /*Модальное окно Логин*/
 
 @keyframes bounce {
@@ -1965,7 +1968,6 @@ fieldset label:last-child {
 
 .login-enter label {margin-left:112px;}
 
-
 .button-send-login {
 	padding: 20px 0;
 	font-size: 0;
@@ -1997,7 +1999,6 @@ fieldset label:last-child {
 }
 
 /*Конец*/
-
 
 /*Модальное окно, товар добавлен в корзину*/
 
@@ -2111,7 +2112,6 @@ fieldset label:last-child {
 }
 
 /*Конец*/
-
 
 /*Модальное окно Обратная связь*/
 
@@ -2266,7 +2266,6 @@ fieldset label:last-child {
 }
 
 /*Конец*/
-
 
 /*Модальное окно Карта*/
 
