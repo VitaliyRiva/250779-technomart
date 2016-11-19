@@ -12,7 +12,7 @@
 	<header class="main-header">
 		<div class="container-center clearfix">
 			<a href="index.html" class="logo">ТЕХНОМАРТ</a>
-			<form class="header-search" action="/" method="get">
+			<form class="header-search" action="https://echo.htmlacademy.ru/" method="get">
 				<input type="search" name="search" id="search" placeholder="Поиск:">
 				<label class="input-search" for="search"></label>
 			</form>
@@ -67,7 +67,7 @@
 		</ul>
 		<h1>Перфораторы</h1>
 		<div class="result-block clearfix">
-			<form class="catalog-result" action="/" method="get">
+			<form class="catalog-result" action="https://echo.htmlacademy.ru/" method="get">
 				<div class="filter-title">Фильтр:</div>
 				<div class="range-price">Цена:</div>
 				<div class="range-filter">
@@ -132,7 +132,7 @@
 						<div class="old-price">
 							22500 Р.
 						</div>
-						<div class="current-price" href="#">15500 Р.</div>
+						<div class="current-price">15500 Р.</div>
 					</div>
 					<div class="catalog-item">
 						<div class="action">
@@ -146,7 +146,7 @@
 						<div class="old-price">
 							30500 Р.
 						</div>
-						<div class="current-price" href="#">25500 Р.</div>
+						<div class="current-price">25500 Р.</div>
 					</div>
 					<div class="catalog-item new">
 					<div class="action">
@@ -157,7 +157,7 @@
 							<img src="img/bfg-2000.jpg" alt="Перфоратор" width="218" height="168">
 						</div>
 						<p>Перфоратор BOSCH BFG 2000</p>
-						<div class="current-price" href="#">15500 Р.</div>
+						<div class="current-price">15500 Р.</div>
 					</div>
 					<div class="catalog-item">
 						<div class="action">
@@ -171,7 +171,7 @@
 						<div class="old-price">
 							22500 Р.
 						</div>
-						<div class="current-price" href="#">15500 Р.</div>
+						<div class="current-price">15500 Р.</div>
 					</div>
 					<div class="catalog-item new">
 						<div class="action">
@@ -185,7 +185,7 @@
 						<div class="old-price">
 							30500 Р.
 						</div>
-						<div class="current-price" href="#">25500 Р.</div>
+						<div class="current-price">25500 Р.</div>
 					</div>
 					<div class="catalog-item">
 						<div class="action">
@@ -196,7 +196,7 @@
 							<img src="img/bfg-2000.jpg" alt="Перфоратор" width="218" height="168">
 						</div>
 						<p>Перфоратор BOSCH BFG 2000</p>
-						<div class="current-price" href="#">15500 Р.</div>
+						<div class="current-price">15500 Р.</div>
 					</div>
 					<div class="catalog-item new">
 						<div class="action">
@@ -210,7 +210,7 @@
 						<div class="old-price">
 							22500 Р.
 						</div>
-						<div class="current-price" href="#">15500 Р.</div>
+						<div class="current-price">15500 Р.</div>
 					</div>
 					<div class="catalog-item">
 						<div class="action">
@@ -224,7 +224,7 @@
 						<div class="old-price">
 							30500 Р.
 						</div>
-						<div class="current-price" href="#">25500 Р.</div>
+						<div class="current-price">25500 Р.</div>
 					</div>
 					<div class="catalog-item">
 						<div class="action">
@@ -235,7 +235,7 @@
 							<img src="img/bfg-2000.jpg" alt="Перфоратор" width="218" height="168">
 						</div>
 						<p>Перфоратор BOSCH BFG 2000</p>
-						<div class="current-price" href="#">15500 Р.</div>
+						<div class="current-price">15500 Р.</div>
 					</div>
 				</div>
 				<!-- Пагинация -->
@@ -295,7 +295,7 @@
 				</div>
 				<div class="footer-design">
 					<p>Разработано -</p>
-					<a href="htmlacademy.ru">htmlacademy.ru</a>
+					<a href="http://htmlacademy.ru">htmlacademy.ru</a>
 				</div>
 				<div class="footer-feedback">
 					<p>Обратная связь:</p>
@@ -309,32 +309,43 @@
 		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
 		<span>Товар добавлен в корзину</span>
 		<div class="button-send-cart">
-			<a href="#" class="main-btn">Оформить заказ</a>
-			<a href="#" class="main-btn">Продолжить покупки</a>
+			<a href="#" class="main-btn checkout">Оформить заказ</a>
+			<a href="#" class="main-btn contshopp">Продолжить покупки</a>
 		</div>
 	</div>
 	<!-- Конец -->
 	<script>
-      var catalogbuy = document.querySelector(".buy");
-      var catalogbuypopup = document.querySelector(".modal-content-cart");
-      var catalogbuyclose = catalogbuypopup.querySelector(".modal-content-close");
+	var catalogbuy = document.querySelectorAll(".buy");
+	var catalogbuypopup = document.querySelector(".modal-content-cart");
+	var catalogbuyclose = catalogbuypopup.querySelector(".modal-content-close");
+	var catalogbuychekout = catalogbuypopup.querySelector(".checkout");
+	var catalogbuycontshopp = catalogbuypopup.querySelector(".contshopp");
 
-      catalogbuy .addEventListener("click", function(event) {
-      	event.preventDefault();
-		catalogbuypopup.classList.add("modal-content-show");
-      });
-
-      catalogbuyclose.addEventListener("click", function(event) {
-        event.preventDefault();
-        catalogbuypopup.classList.remove("modal-content-show");
-      });
-      window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (catalogbuypopup.classList.contains("modal-content-show")) {
-            catalogbuypopup.classList.remove("modal-content-show");
-          }
-        }
-      });
+	for (var i = 0; i < catalogbuy.length; i++) {
+		catalogbuy[i].addEventListener("click", function(event) {
+		event.preventDefault();
+	catalogbuypopup.classList.add("modal-content-show");
+	});
+	}
+		catalogbuychekout.addEventListener("click", function(event) {
+		event.preventDefault();
+		catalogbuypopup.classList.remove("modal-content-show");
+	});
+		catalogbuycontshopp.addEventListener("click", function(event) {
+		event.preventDefault();
+		catalogbuypopup.classList.remove("modal-content-show");
+	});
+		catalogbuyclose.addEventListener("click", function(event) {
+		event.preventDefault();
+		catalogbuypopup.classList.remove("modal-content-show");
+	});
+	window.addEventListener("keydown", function(event) {
+		if (event.keyCode === 27) {
+			if (catalogbuypopup.classList.contains("modal-content-show")) {
+			catalogbuypopup.classList.remove("modal-content-show");
+			}
+		}
+	});
 </script>
 </body>
 </html>

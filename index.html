@@ -12,7 +12,7 @@
 	<header class="main-header">
 		<div class="container-center clearfix">
 			<a href="index.html" class="logo">ТЕХНОМАРТ</a>
-			<form class="header-search" action="/" method="get">
+			<form class="header-search" action="https://echo.htmlacademy.ru/" method="get">
 				<input type="search" name="search" id="search" placeholder="Поиск:">
 				<label class="input-search" for="search"></label>
 			</form>
@@ -122,7 +122,7 @@
 					<div class="old-price">
 						32500 Р.
 					</div>
-					<div class="current-price" href="#">25500 Р.</div>
+					<div class="current-price">25500 Р.</div>
 				</div>
 				<div class="popular-goods-item">
 					<div class="action">
@@ -136,7 +136,7 @@
 					<div class="old-price">
 						22500 Р.
 					</div>
-					<div class="current-price" href="#">15500 Р.</div>
+					<div class="current-price">15500 Р.</div>
 				</div>
 				<div class="popular-goods-item">
 					<div class="action">
@@ -150,7 +150,7 @@
 					<div class="old-price">
 						30500 Р.
 					</div>
-					<div class="current-price" href="#">25500 Р.</div>
+					<div class="current-price">25500 Р.</div>
 				</div>
 				<div class="popular-goods-item new">
 					<div class="action">
@@ -163,7 +163,7 @@
 						<p>Перфоратор BOSCH BFG 2000</p>
 				<!-- <div class="old-price">
 					</div> -->
-					<div class="current-price" href="#">12500 Р.</div>
+					<div class="current-price">12500 Р.</div>
 				</div>
 			</div>
 			<!-- Заголовок производителей -->
@@ -305,7 +305,7 @@
 				</div>
 				<div class="footer-design">
 					<p>Разработано -</p>
-					<a href="htmlacademy.ru">htmlacademy.ru</a>
+					<a href="http://htmlacademy.ru">htmlacademy.ru</a>
 				</div>
 				<div class="footer-feedback">
 					<p>Обратная связь:</p>
@@ -318,7 +318,7 @@
 	<!-- Модальное окно логина -->
 	<div class="modal-content-login">
 		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-		<form action="/" class="login-enter" method="post">
+		<form action="https://echo.htmlacademy.ru/" class="login-enter" method="post">
 			<input type="text" class="login-field" name="login" placeholder="Логин">
 			<input type="password" class="password-field" name="password" placeholder="Пароль">
 			<input type="checkbox" id="remember" name="remember" checked>
@@ -336,8 +336,8 @@
 		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
 		<span>Товар добавлен в корзину</span>
 		<div class="button-send-cart">
-			<a href="#" class="main-btn">Оформить заказ</a>
-			<a href="#" class="main-btn">Продолжить покупки</a>
+			<a href="#" class="main-btn checkout">Оформить заказ</a>
+			<a href="#" class="main-btn contshopp">Продолжить покупки</a>
 		</div>
 	</div>
 		<!-- Конец -->
@@ -345,7 +345,7 @@
 		<!-- Модальное окно формы обратной связи -->
 	<div class="modal-content-feedback">
 		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-		<form class="feedback-form" action="/" method="post">
+		<form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
 			<div class="user-info-block clearfix">
 				<div class="user-name-block">
 					<label for="user-name">Ваше имя:</label>
@@ -373,132 +373,6 @@
 		<img src="img/map-large.jpg" alt="Местоположения">
 	</div>
 	<!-- Конец -->
- <script>
-      var link = document.querySelector(".login");
-      var popup = document.querySelector(".modal-content-login");
-      var close = popup.querySelector(".modal-content-close");
-
-      var form = popup.querySelector("form");
-      var login = popup.querySelector("[name=login]");
-      var password = popup.querySelector("[name=password]");
-
-      var storage = localStorage.getItem("login");
-
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.add("modal-content-show");
-
-        if (storage) {
-          login.value = storage;
-          password.focus();
-        } else {
-          login.focus();
-        }
-      });
-
-      close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("modal-content-show");
-        popup.classList.remove("modal-error");
-      });
-
-      form.addEventListener("submit", function(event) {
-        if (!login.value || !password.value) {
-          event.preventDefault();
-          popup.classList.remove("modal-error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("modal-error");
-        } else {
-          localStorage.setItem("login", login.value);
-        }
-      });
-
-      window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (popup.classList.contains("modal-content-show")) {
-            popup.classList.remove("modal-content-show");
-            popup.classList.remove("modal-error");
-          }
-        }
-      });
-</script>
-
-<script>
-      var catalogbuy = document.querySelector(".buy");
-      var catalogbuypopup = document.querySelector(".modal-content-cart");
-      var catalogbuyclose = catalogbuypopup.querySelector(".modal-content-close");
-
-      catalogbuy .addEventListener("click", function(event) {
-      	event.preventDefault();
-		catalogbuypopup.classList.add("modal-content-show");
-      });
-
-      catalogbuyclose.addEventListener("click", function(event) {
-        event.preventDefault();
-        catalogbuypopup.classList.remove("modal-content-show");
-      });
-      window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (catalogbuypopup.classList.contains("modal-content-show")) {
-            catalogbuypopup.classList.remove("modal-content-show");
-          }
-        }
-      });
-      for (var i=0; i < catalogbuy.length;i++){
-		catalogbuy[i].addEventListener("click", function(event) {
-		event.preventDefault();
-		catalogbuypopup.classList.add("modal-content-show");
-		});
-	}
-</script>
-
-<script>
-      var feedbackform = document.querySelector(".write-us");
-      var feedbackformpopup = document.querySelector(".modal-content-feedback");
-      var feedbackformclose = feedbackformpopup.querySelector(".modal-content-close");
-
-      feedbackform.addEventListener("click", function(event) {
-      	event.preventDefault();
-		feedbackformpopup.classList.add("modal-content-show");
-      });
-
-      feedbackformclose.addEventListener("click", function(event) {
-        event.preventDefault();
-        feedbackformpopup.classList.remove("modal-content-show");
-      });
-        window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (feedbackformpopup.classList.contains("modal-content-show")) {
-            feedbackformpopup.classList.remove("modal-content-show");
-          }
-        }
-      });
-</script>
-
-<script>
-      var mapOpen = document.querySelector(".map");
-
-      var mapPopup = document.querySelector(".modal-content-map");
-      var mapClose = mapPopup.querySelector(".modal-content-close");
-
-      mapOpen.addEventListener("click", function(event) {
-        event.preventDefault();
-        mapPopup.classList.add("modal-content-show");
-      });
-
-      mapClose.addEventListener("click", function(event) {
-        event.preventDefault();
-        mapPopup.classList.remove("modal-content-show");
-      });
-
-      window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (mapPopup.classList.contains("modal-content-show")) {
-            mapPopup.classList.remove("modal-content-show");
-          }
-        }
-      });
-    </script>
-	<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
