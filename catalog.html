@@ -38,7 +38,6 @@
 				</div>
 				<div class="information-authorized">
 					<a class="logged" href="#">Равшан Джамшутович</a>
-					<a class="login-exit" href="#"></a>
 					<a class="my-orders" href="#">Мои заказы</a>
 					<span class="dot"></span>
 					<a class="personal-area" href="#">Личный кабинет</a>
@@ -63,7 +62,7 @@
 			<li><a class="home" href="/"></a></li>
 			<li><a href="catalog.html">Каталог</a></li>
 			<li><a href="#">Инструмент</a></li>
-			<li><a href="#">Перфораторы</a></li>
+			<li class="last-icon"><a href="#">Перфораторы</a></li>
 		</ul>
 		<h1>Перфораторы</h1>
 		<div class="result-block clearfix">
@@ -267,13 +266,13 @@
 						<li><a href="#">Новости</a></li>
 						<li><a href="catalog.html">Каталог</a></li>
 						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li class="last-paragraph"><a href="#">Контакты</a></li>
 					</ul>
 					<ul class="footer-nav-second">
 						<li><a href="#">Материалы</a></li>
 						<li><a href="#">Техника</a></li>
 						<li><a href="#">Инструменты</a></li>
-						<li><a href="#">Спецпредложения</a></li>
+						<li class="last-paragraph"><a href="#">Спецпредложения</a></li>
 					</ul>
 				</div>
 				<div class="footer-contacts">
@@ -314,39 +313,7 @@
 		</div>
 	</div>
 	<!-- Конец -->
-	<script>
-	var catalogbuy = document.querySelectorAll(".buy");
-	var catalogbuypopup = document.querySelector(".modal-content-cart");
-	var catalogbuyclose = catalogbuypopup.querySelector(".modal-content-close");
-	var catalogbuychekout = catalogbuypopup.querySelector(".checkout");
-	var catalogbuycontshopp = catalogbuypopup.querySelector(".contshopp");
-
-	for (var i = 0; i < catalogbuy.length; i++) {
-		catalogbuy[i].addEventListener("click", function(event) {
-		event.preventDefault();
-	catalogbuypopup.classList.add("modal-content-show");
-	});
-	}
-		catalogbuychekout.addEventListener("click", function(event) {
-		event.preventDefault();
-		catalogbuypopup.classList.remove("modal-content-show");
-	});
-		catalogbuycontshopp.addEventListener("click", function(event) {
-		event.preventDefault();
-		catalogbuypopup.classList.remove("modal-content-show");
-	});
-		catalogbuyclose.addEventListener("click", function(event) {
-		event.preventDefault();
-		catalogbuypopup.classList.remove("modal-content-show");
-	});
-	window.addEventListener("keydown", function(event) {
-		if (event.keyCode === 27) {
-			if (catalogbuypopup.classList.contains("modal-content-show")) {
-			catalogbuypopup.classList.remove("modal-content-show");
-			}
-		}
-	});
-</script>
+	<script src="js/script.js"></script>
 </body>
 </html>
 
