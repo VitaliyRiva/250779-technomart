@@ -4,7 +4,7 @@
 	var close = popup.querySelector(".modal-content-close");
 
 	// Отлов действия у формы чтоб был заполнен Логин и пароль
-	
+
 	var form = popup.querySelector("form");
 	var login = popup.querySelector("[name=login]");
 	var password = popup.querySelector("[name=password]");

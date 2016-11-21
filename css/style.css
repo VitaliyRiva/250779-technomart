@@ -360,7 +360,11 @@ li {list-style: none;}
 	background-position: -10px -1134px;
 }
 
-.logged:active {color:#000; opacity: 0.4;}
+.logged:active {
+	color:#000;
+	opacity: 0.4;
+}
+
 .logged:hover::after { background-position: -10px -742px; }
 .logged::after {
 	content: "";
@@ -607,7 +611,7 @@ li {list-style: none;}
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"]{ background: #ee3643; }
+#btn-2:checked ~ .slider-controls label[for="btn-2"] { background: #ee3643; }
 
 .slide{
 	position:absolute;
@@ -743,10 +747,10 @@ li {list-style: none;}
 	border-bottom-color:#63a63e;
 }
 
-.popular-goods-item .action{ display:none; }
-.popular-goods-item:hover .action{ display:block; }
+.popular-goods-item .action { display:none; }
+.popular-goods-item:hover .action { display:block; }
 .catalog-item .action { display:none; }
-.catalog-item:hover .action{ display:block; }
+.catalog-item:hover .action { display:block; }
 
 .buy { position: relative; }
 
@@ -791,7 +795,7 @@ li {list-style: none;}
 	float: left;
 	min-height: 316px;
 	margin-right: 20px;
-	margin-bottom: 25px;
+	margin-bottom: 16px;
 	padding-bottom:10px;
 	text-align: center;
 	border: 1px solid #e5e5e5;
@@ -886,8 +890,8 @@ p + .current-price {
 	background: #f7f3ec;
 }
 
-.popular-producers-block .main-btn {float: right;}
-.brands {margin-bottom: 60px;}
+.popular-producers-block .main-btn { float: right; }
+.brands { margin-bottom: 60px; }
 
 .brand {
 	float: left;
@@ -897,7 +901,7 @@ p + .current-price {
 	margin-bottom: 13px;
 }
 
-.brand:nth-child(4n) {margin-right: 0;}
+.brand:nth-child(4n) { margin-right: 0; }
 
 .brand img {
 	width: 100%;
@@ -905,8 +909,8 @@ p + .current-price {
 	border: 1px solid #e5e5e5;
 }
 
-.brand img:hover {box-shadow: 0 10px 20px rgba(0,0,0,0.2);}
-.brand img:active {opacity: 0.4;}
+.brand img:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+.brand img:active { opacity: 0.4; }
 
 .services-block { background: #f2f6f8; }
 
@@ -933,6 +937,11 @@ p + .current-price {
 	padding-top: 55px;
 	padding-bottom: 24px;
 }
+
+.delivery p.page-text { width: 283px; }
+.guarantee p.page-text { width: 379px; }
+.credit p.page-text { margin-bottom: 27px; }
+
 
 .tab-title {
 	font-size: 36px;
@@ -974,7 +983,7 @@ p + .current-price {
 	background: #32425c;
 }
 
-.services-toggles label:first-child {border-top:none;}
+.services-toggles label:first-child { border-top:none; }
 
 .services-toggles label:last-child {
 	border:none;
@@ -1029,11 +1038,6 @@ p + .current-price {
 	background-position: right -1738px;
 	background-repeat: no-repeat;
 	display: block;
-}
-
-.services-slide p {
-	width:300px;
-	margin-bottom: 24px;
 }
 
 /*Конец*/
@@ -1595,7 +1599,7 @@ fieldset label:last-child { padding-bottom: 0; }
 	opacity: .3;
 }
 
-.functional {margin-right: 42px;}
+.functional { margin-right: 42px; }
 
 .active-list:hover,.type:hover,.functional:hover  {
 	border-bottom: 1px solid #ee3643;
