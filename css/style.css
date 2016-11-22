@@ -354,8 +354,6 @@ li { list-style: none; }
 	background: #fff;
 }
 
-
-
 .logged:hover::before { background-position: -10px -1172px; }
 .logged::before {
 	content: "";
@@ -444,9 +442,7 @@ li { list-style: none; }
 	border-bottom: 3px solid #293449;
 }
 
-.navigation li {
-	display: inline-block;
-}
+.navigation li { display: inline-block; }
 
 .navigation a {
 	display: block;
@@ -2029,7 +2025,6 @@ fieldset label:last-child { padding-bottom: 0; }
 
 /*Модальное окно Обратная связь*/
 
-
 @keyframes shake {
 	0%, 100% { transform: translateX(0); }
 	10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
@@ -2088,14 +2083,15 @@ fieldset label:last-child { padding-bottom: 0; }
 .modal-content-close::before { transform: rotate(45deg); }
 .modal-content-close::after { transform: rotate(-45deg); }
 
-.user-info-block{
+.user-info-block {
 	width:460px;
 	margin-right: 80px;
 	margin-left: 80px;
 	margin-bottom: 30px;
 }
 
-.user-name-block, .user-email-block {
+.user-name-block,
+.user-email-block {
 	float:left;
 	vertical-align: top;
 	width: 220px;
@@ -2184,6 +2180,13 @@ fieldset label:last-child { padding-bottom: 0; }
 	cursor: pointer;
 }
 
+.form-shown {
+	position: relative;
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
 /*Конец*/
 
 /*Модальное окно Карта*/
@@ -2196,7 +2199,7 @@ fieldset label:last-child { padding-bottom: 0; }
 	width: 940px;
 	height: 446px;
 	margin-top: -223px;
-	margin-left: -410px;
+	margin-left: -470px;
 	background: #fff;
 	color: #000000;
 	border-top: 5px solid #ee3643;
@@ -2222,6 +2225,7 @@ fieldset label:last-child { padding-bottom: 0; }
 	border: 0;
 	background: none;
 	cursor: pointer;
+	z-index: 9999;
 }
 
 .modal-content-close::before,
@@ -2238,5 +2242,12 @@ fieldset label:last-child { padding-bottom: 0; }
 
 .modal-content-close::before { transform: rotate(45deg); }
 .modal-content-close::after { transform: rotate(-45deg); }
+
+.map-shown {
+	display: block;
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
 
 /*Конец*/

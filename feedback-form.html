@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Academy: Техномарт</title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header class="main-header">
+		<div class="container-center clearfix">
+			<a href="index.html" class="logo">ТЕХНОМАРТ</a>
+			<form class="header-search" action="https://echo.htmlacademy.ru/" method="get">
+				<input type="search" name="search" id="search" placeholder="Поиск:">
+				<label class="input-search" for="search"></label>
+			</form>
+			<a href="#" class="bookmarks active">Закладки:<span>0</span></a>
+			<a href="#" class="cart active">Корзина:<span>10</span></a>
+			<a href="#" class="order">Оформить заказ</a>
+		</div>
+	</header>
+	<div class="modal-content-feedback form-shown">
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+			<div class="user-info-block clearfix">
+				<div class="user-name-block">
+					<label for="user-name">Ваше имя:</label>
+					<input type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста">
+				</div>
+				<div class="user-email-block">
+					<label for="user-email">Ваш e-mail:</label>
+					<input type="text" name="user-email" id="user-email" placeholder="Для отправки ответа">
+				</div>
+				<div class="user-text-block">
+					<label for="user-text">Текст письма:</label>
+					<textarea cols="50" rows="50"  name="user-text" id="user-text" placeholder="В свободной форме"></textarea>
+				</div>
+			</div>
+			<div class="button-send-block">
+				<input class="main-btn" type="submit" name="send-button" id="send-button" value="Отправить">
+			</div>
+		</form>
+	</div>
+	<footer>
+		<div class="footer-top">
+			<div class="container-center clearfix">
+				<a class="logo" href="index.html">ТЕХНОМАРТ</a>
+				<div class="footer-navigation">
+					<ul class="footer-nav-first">
+						<li><a href="#">Компания</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li class="last-paragraph"><a href="#">Контакты</a></li>
+					</ul>
+					<ul class="footer-nav-second">
+						<li><a href="#">Материалы</a></li>
+						<li><a href="#">Техника</a></li>
+						<li><a href="#">Инструменты</a></li>
+						<li class="last-paragraph"><a href="#">Спецпредложения</a></li>
+					</ul>
+				</div>
+				<div class="footer-contacts">
+					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+					+7 (812) 555-05-55
+				</div>
+			</div>
+		</div>
+				<!-- Футер нижняя часть -->
+		<div class="footer-bottom">
+			<div class="container-center clearfix">
+				<div class="footer-rights">
+					© 2010–2016 Компания «Техномарт» <br> Все права защищены
+				</div>
+				<div class="footer-social">
+					<a class="btn-social social-vk" href="http://vk.com">vk.com</a>
+					<a class=" btn-social social-fb" href="http://facebook.com">facebook.com</a>
+					<a class="btn-social social-in" href="http://instagram.com">instagram.com</a>
+				</div>
+				<div class="footer-design">
+					<p>Разработано -</p>
+					<a href="http://htmlacademy.ru">htmlacademy.ru</a>
+				</div>
+				<div class="footer-feedback">
+					<p>Обратная связь:</p>
+					<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
